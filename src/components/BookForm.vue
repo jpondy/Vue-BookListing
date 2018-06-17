@@ -8,20 +8,21 @@
 
 <script>
 export default {
-    name: 'BookForm',
-    props: ['books'],
-    data: function() {
-        return {
-            bookTitle: '',
-            bookAuthor: ''
-        }
-    },
-    methods: {
-        
+  name: "BookForm",
+  props: ["books"],
+  data: function() {
+    return {
+      bookTitle: "",
+      bookAuthor: ""
+    };
+  },
+  methods: {
+    bookSubmit: (bookTitle, bookAuthor) => {
+      this.$emit("addBook", bookTitle, bookAuthor);
     }
-}
+  }
+};
 </script>
 
 <style>
-
 </style>
