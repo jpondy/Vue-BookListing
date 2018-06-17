@@ -12,12 +12,12 @@
             }
         }
     }
-    
+
 </script>
 
 
 <style>
-    H1, H2 {
+    h1, h2 {
         font-weight: normal
     }
 </style>
