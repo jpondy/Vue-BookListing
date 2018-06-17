@@ -8,23 +8,24 @@
 </template>
 
 <script>
+import BookItem from "./BookItem";
+
 export default {
   name: "BookList",
   components: {
     BookItem
   },
-  data(){ 
+  data() {
     return {
       title: "All Books",
-      books: 
-      [
-        {title: 'Self-Reliance', author: 'Ralph Waldo Emerson'},
-        {title: 'American Gods', author: 'Neil Gaiman'},
-        {title: 'Amusing Ourselves to Death', author: 'Neil Postman'}
+      books: [
+        { title: "Self-Reliance", author: "Ralph Waldo Emerson" },
+        { title: "American Gods", author: "Neil Gaiman" },
+        { title: "Amusing Ourselves to Death", author: "Neil Postman" }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 
@@ -37,6 +38,5 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-
 </style>
 
