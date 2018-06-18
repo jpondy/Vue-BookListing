@@ -12,10 +12,6 @@ export default {
       return {
     };
   },
-  /* mounted: function() {
-    this.confirmed();
-    this.canceled();
-  }, */
   methods: {
     confirmed: function() {
       console.log('Confirmed');
